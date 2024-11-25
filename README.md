@@ -68,3 +68,6 @@ To use EnglishTextGen for generating English text, follow these steps:
 6. **Acknowledgments**:
 - Thanks to the AI Alliance Open Trusted Data Initiative for providing the Common Corpus dataset.
 - Thanks to the Hugging Face team for providing the Transformers library.
+
+7. **Dataset Link**:
+ - [Common Corpus](https://huggingface.co/datasets/PleIAs/common_corpus)
