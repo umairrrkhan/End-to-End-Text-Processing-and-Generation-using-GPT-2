@@ -1,12 +1,12 @@
-# A Fine-Tuned GPT-2 Model for English Text Generation
+# End-to-End Text Processing and Generation using GPT-2
 
 ## Overview
 
-EnglishTextGen is a fine-tuned GPT-2 model designed for generating high-quality English text. The model was trained on a subset of the Common Corpus dataset, which is part of the AI Alliance Open Trusted Data Initiative. This dataset contains over 2 trillion tokens of permissibly licensed content with provenance information. For this project, a cleaned subset of 111 million tokens was used to fine-tune the model.
+EnglishTextGen is a fine-tuned GPT-2 model designed for generating high-quality English text. The model was trained on a subset of the Common Corpus dataset, which is part of the AI Alliance Open Trusted Data Initiative. This dataset contains over 2 trillion tokens of permissibly licensed content with provenance information. For this project, a cleaned subset of 39 million tokens was used to fine-tune the model.
 
 ## Dataset
 
-The dataset used for training EnglishTextGen is a subset of the Common Corpus dataset, which is the largest fully open multilingual dataset for training large language models (LLMs). The dataset contains over 2 trillion tokens of permissibly licensed content with provenance information. For this project, a cleaned subset of 111 million tokens was used, with approximately 98% of the tokens being in English and covering a wide range of topics and styles.
+The dataset used for training EnglishTextGen is a subset of the Common Corpus dataset, which is the largest fully open multilingual dataset for training large language models (LLMs). The dataset contains over 2 trillion tokens of permissibly licensed content with provenance information. For this project, a cleaned subset of 39  million tokens was used well we can used more but bcz of the compute power i cant but if u have a good gpu u can scale it up u just have to change the file and u can combine too u will find the better result , with approximately 100 % of the tokens being in English and covering a wide range of topics and styles.
 
 ## Training Process
 
@@ -14,8 +14,8 @@ The model was fine-tuned using the Hugging Face Transformers library. The traini
 
 1. **Data Cleaning**: The dataset was cleaned to remove low-quality and irrelevant data. The cleaning process included removing programming language entries, cleaning text content, detecting English language, and filtering only English content.
 2. **Tokenization**: The text data was tokenized using the GPT-2 tokenizer, with padding and truncation applied to handle input sequences of varying lengths.
-3. **Training**: The model was fine-tuned for 3 epochs with a batch size of 4 and a learning rate of 2e-5. The training process was monitored using the training loss and performance on a validation set.
-4. **Evaluation**: The model was evaluated using metrics such as perplexity, BLEU score, and ROUGE score. Human evaluation was also conducted to gain insights into the model's strengths and weaknesses.
+3. **Training**: The model was fine-tuned for 3 epochs with a batch size of 8 and a learning rate of 2e-5. The training process was monitored using the training loss and performance on a validation set.
+4. **Evaluation**: The model was evaluated using metrics such as perplexity, BLEU score. Human evaluation was also conducted to gain insights into the model's strengths and weaknesses.
 
 ## Model Architecture
 
@@ -60,7 +60,7 @@ To use EnglishTextGen for generating English text, follow these steps:
    print(generated_text)
 
 4. ***Evaluation***:
-- The model was evaluated using metrics such as perplexity, BLEU score, and ROUGE score. Human evaluation was also conducted to gain insights into the model's strengths and weaknesses. The model demonstrated the ability to generate coherent and relevant English text based on the given prompts.
+- The model was evaluated using metrics such as perplexity, BLEU  score. Human evaluation was also conducted to gain insights into the model's strengths and weaknesses. The model demonstrated the ability to generate coherent and relevant English text based on the given prompts.
 
 5. **Contributing**:
 - Contributions are welcome! Please feel free to open an issue or submit a pull request if you have any suggestions or improvements.
