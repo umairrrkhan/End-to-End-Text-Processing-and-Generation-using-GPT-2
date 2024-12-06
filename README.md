@@ -2,7 +2,7 @@
 
 ## Overview
 
-EnglishTextGen is a fine-tuned GPT-2 model designed for generating high-quality English text. The model was trained on a subset of the Common Corpus dataset, which is part of the AI Alliance Open Trusted Data Initiative. This dataset contains over 2 trillion tokens of permissibly licensed content with provenance information. For this project, a cleaned subset of 39 million tokens was used to fine-tune the model.
+EnglishTextGen is a fine-tuned GPT-2 model designed for generating high-quality English text. The model was trained on a subset of the Common Corpus dataset, which is part of the AI Alliance Open Trusted Data Initiative. This dataset contains over 2 trillion tokens of permissibly licensed content with provenance information. For this project, a cleaned subset of 39 million tokens was used to fine-tune the model.  The model was fine-tuned for 3 epochs, effectively training on 39 million tokens three times so its mean trained on the 117 million toekns .
 
 ## Dataset
 
@@ -59,15 +59,18 @@ To use EnglishTextGen for generating English text, follow these steps:
    generated_text = generate_text(prompt)
    print(generated_text)
 
-4. ***Evaluation***:
+## ***Evaluation***:
 - The model was evaluated using metrics such as perplexity, BLEU  score. Human evaluation was also conducted to gain insights into the model's strengths and weaknesses. The model demonstrated the ability to generate coherent and relevant English text based on the given prompts.
 
-5. **Contributing**:
+## **Deployment**:
+   - The model has been deployed and can be accessed at: [English Text Generation](https://huggingface.co/spaces/umairrrkhan/english-text-generation)
+
+## **Contributing**:
 - Contributions are welcome! Please feel free to open an issue or submit a pull request if you have any suggestions or improvements.
 
-6. **Acknowledgments**:
+## **Acknowledgments**:
 - Thanks to the AI Alliance Open Trusted Data Initiative for providing the Common Corpus dataset.
-- Thanks to the Hugging Face team for providing the Transformers library.
+- Thanks to the Hugging Face team for providing the Transformers library and for deployment too .
 
-7. **Dataset Link**:
+## **Dataset Link**:
  - [Common Corpus](https://huggingface.co/datasets/PleIAs/common_corpus)
